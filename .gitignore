@@ -28,6 +28,8 @@ dist/
 *.egg-info/
 .eggs/
 .cache/
+*.zip
+*.tar.gz
 
 # =========================
 # PyTorch / Deep Learning
