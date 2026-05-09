@@ -1,0 +1,80 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Build / Cache
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+.cache/
+
+# =========================
+# PyTorch / Deep Learning
+# =========================
+*.pth
+*.pt
+*.onnx
+*.engine
+*.trt
+*.ckpt
+
+# Tensorboard
+runs/
+wandb/
+
+# Logs
+logs/
+*.log
+
+# =========================
+# Dataset
+# =========================
+datasets/
+data/
+output/
+results/
+
+# =========================
+# MMDetection / MMDeploy
+# =========================
+work_dirs/
+checkpoints/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Nested Git
+# =========================
+**/.git
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
