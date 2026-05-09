@@ -1,0 +1,9 @@
+type: faster_rcnn
+name: faster-rcnn-1.0
+display_name: Faster R-CNN(seedlings)
+provider: xxx
+conf_threshold: 0.5
+model_path: C:/Users/luodi/anylabeling_data/models/depth_anything_vit_b-r20240124/end2end.onnx
+classes:
+  - germinated
+  - ungerminated
