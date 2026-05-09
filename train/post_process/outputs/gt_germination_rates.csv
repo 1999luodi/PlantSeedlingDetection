@@ -1,0 +1,13 @@
+json_file,image_name,germinated,ungerminated,total,gt_rate
+split_data\val\1.4-2-wrap.json,1.4-2-wrap.jpg,180,20,200,0.9
+split_data\val\1.4-22-wrap.json,1.4-22-wrap.jpg,172,28,200,0.86
+split_data\val\2.2-1-wrap-3.json,2.2-1-wrap-3.jpg,190,10,200,0.95
+split_data\val\2.2-5-wrap-3.json,2.2-5-wrap-3.jpg,175,25,200,0.875
+split_data\val\2.8-2-wrap-2.json,2.8-2-wrap-2.jpg,184,16,200,0.92
+split_data\val\2.9-1-wrap-0.json,2.9-1-wrap-0.jpg,188,12,200,0.94
+split_data\val\2.9-1-wrap-1.json,2.9-1-wrap-1.jpg,176,24,200,0.88
+split_data\val\2.9-2-wrap-2.json,2.9-2-wrap-2.jpg,193,7,200,0.965
+split_data\val\2.9-5-wrap-0.json,2.9-5-wrap-0.jpg,179,21,200,0.895
+split_data\val\3.0-3-wrap-3.json,3.0-3-wrap-3.jpg,186,14,200,0.93
+split_data\val\3.0-4-wrap-1.json,3.0-4-wrap-1.jpg,178,22,200,0.89
+split_data\val\3.0-5-wrap-4.json,3.0-5-wrap-4.jpg,175,25,200,0.875

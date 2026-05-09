@@ -1,0 +1,39 @@
+{
+  "version": "3.3.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "germinated",
+      "score": null,
+      "points": [
+        [
+          18.0,
+          8.0
+        ],
+        [
+          69.0,
+          8.0
+        ],
+        [
+          69.0,
+          66.0
+        ],
+        [
+          18.0,
+          66.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "2.8-5-wrap-1.jpg",
+  "imageData": null,
+  "imageHeight": 800,
+  "imageWidth": 1600
+}
