@@ -5,6 +5,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# =========================
+# data
+# =========================
+*.zip
+*.tar.gz
+data/
+
 # Virtual Environment
 venv/
 env/
@@ -28,8 +35,7 @@ dist/
 *.egg-info/
 .eggs/
 .cache/
-*.zip
-*.tar.gz
+
 
 # =========================
 # PyTorch / Deep Learning
