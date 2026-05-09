@@ -176,8 +176,18 @@ split_data/
 ![alt text](train/mmdetection/work_dirs/faster-rcnn_r50_fpn_2x_coco/20260427_232246/faster-rcnn-results/2.2-1-wrap-3.jpg) 
 ![alt text](train/mmdetection/work_dirs/faster-rcnn_r50_fpn_2x_coco/20260427_232246/faster-rcnn-results/1.4-2-wrap.jpg)
 
-val 的评估结果：
-{"coco/bbox_mAP": 0.664, "coco/bbox_mAP_50": 0.947, "coco/bbox_mAP_75": 0.938, "coco/bbox_mAP_s": -1.0, "coco/bbox_mAP_m": 0.865, "coco/bbox_mAP_l": -1.0, "data_time": 0.8706008394559225, "time": 0.9903814792633057}
+**val 评估结果：**
+
+| 指标 | 值 |
+| ---- | ---- |
+| bbox_mAP | **0.664** |
+| bbox_mAP_50 | **0.947** |
+| bbox_mAP_75 | **0.938** |
+| bbox_mAP_s（小目标） | -1.0（无数据） |
+| bbox_mAP_m（中目标） | **0.865** |
+| bbox_mAP_l（大目标） | -1.0（无数据） |
+| 推理时间（s/img） | 0.990 |
+| 数据加载时间（s/img） | 0.871 |
 
 
 
