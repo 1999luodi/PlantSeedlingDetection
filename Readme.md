@@ -1,10 +1,10 @@
-# 图像算法面试作业（Task1）项目方案文档
+# 出苗率检测（Task1）项目方案文档
 
 ## 1. 项目目标
 
 本任务的核心是为苗情图像算法建立一套可复用、可扩展的数据工程流程，服务后续模型训练与业务验证。
 
-当前阶段目标：
+数据准备：
 
 1. 建立稳定的数据切分流程（按类别、可复现、支持小样本保护）。
 2. 明确已标注与未标注数据分层，支持分阶段标注与迭代训练。
@@ -98,7 +98,7 @@ python split_data/split_data.py \
 | germinated      | 已发芽 |
 | ungerminated    | 未发芽 |
 图像标注示例：
-![alt text](image.png)
+![alt text](/resource/image.png)
 
 标注标准：
 1. 标注框基本按照血的位置边缘为土壤，当苗超出土壤，必须保证框住苗允许超出土壤
@@ -111,7 +111,7 @@ https://github.com/CVHub520/X-AnyLabeling/blob/main/docs/zh_cn/get_started.md
 
 
 使用SAM-HQ(ViT-Base)辅助标注：
-![alt text](image-2.png)
+![alt text](/resource/image-2.png)
 
 ### 4.6 数据标注情况
 split_data/
@@ -150,7 +150,7 @@ split_data/
 
 ##### 1. 模型检测效果1
 漏检率高
-![alt text](image-1.png)
+![alt text](/resource/image-1.png)
 原因：
    - 标注缺失
    - fasterrcnn 模型 rpn 的“保留框上限 + NMS抑制”过紧
@@ -177,9 +177,9 @@ val 的评估结果：
 [配置文件：soft-teacher_faster-rcnn_r50-caffe_fpn_180k_semi-0.1-seedlingdetection.py](train\mmdetection\configs\seedling-detection\soft-teacher_faster-rcnn_r50-caffe_fpn_180k_semi-0.1-seedlingdetection.py)
 
 训练结果
-![loss](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
+![loss](/resource/image-5.png)
+![alt text](/resource/image-6.png)
+![alt text](/resource/image-7.png)
 可见还未拟合
 
 改进策略：
@@ -207,10 +207,10 @@ onnxnx模型推理结果:
 
 模型推理效果
 阈值：0.8  漏检
-![alt text](image-3.png)
+![alt text](/resource/image-3.png)
 
 阈值：0.5  误检
-![alt text](image-4.png)
+![alt text](/resource/image-4.png)
 
 我的考虑是：保证不漏检的情况下，二次训练提示精度降低误检，因此阈值调初始设置为0.5，后续可自行调整。
 
@@ -222,7 +222,7 @@ onnxnx模型推理结果:
 文件解释在：[路径地址](train\post_process\README.md)
 
 发芽率实际和预测，以及误差可视化
-![alt text](image-8.png)
+![alt text](/resource/image-8.png)
 
 --- 
 *本文档作为项目后续改造与实现的统一基线。调整比例、目录命名或标注策略时，应先更新本文件再改代码。*
