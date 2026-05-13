@@ -62,6 +62,7 @@ datasets/
 data/
 output/
 results/
+SoybeanData/
 
 # =========================
 # MMDetection / MMDeploy
@@ -86,3 +87,6 @@ Thumbs.db
 *.tmp
 *.temp
 *.bak
+
+train/mmdeploy/csrc/mmdeploy/apis/csharp/MMDeploy/obj/*
+train/mmdeploy/mmdeploy_model/*

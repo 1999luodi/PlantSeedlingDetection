@@ -246,6 +246,35 @@ onnxnx模型推理结果:
 --- 
 *本文档作为项目后续改造与实现的统一基线。调整比例、目录命名或标注策略时，应先更新本文件再改代码。*
 
+
+
+# 种子发芽检测
+
+## 1. 项目介绍
+检测种子发芽
+
+## 2. 项目结构
+```
+- 数据集：soybeanData
+- 模型训练：train
+- 模型部署：deploy
+```
+## 3. 数据集处理
+脚本：[数据处理脚本](soybeanData\make_data.py)
+
+## 4. 模型训练
+模型训练脚本：
+```
+python.exe .\tools\train.py .\configs\seedling-detection\faster-rcnn_r50_fpn_2x_coco.py 
+```
+
+## 5. 模型部署
+```
+python.exe .\tools\deploy.py .\configs\mmdet\detection\detection_onnxruntime_dynamic.py ..\mmdetection\configs\seed_germination_detection\seed_germination_faster-rcnn_r50_fpn_2x_coco.py ..\mmdetection\work_dirs\seed_germination_faster-rcnn_r50_fpn_2x_coco\epoch_1.pth ..\..\SoybeanData\test\sequence001_dish014.jpg --work-dir mmdeploy_model/seed_faster-rcnn-onnx --device cpu --dump-info
+```
+
+
+
 # 感谢其他开源项目 MMddetection MMdeploy Xanylabeling
 链接为：
 [mmdetection](https://mmdetection.readthedocs.io/zh-cn/latest/user_guides/index.html)
